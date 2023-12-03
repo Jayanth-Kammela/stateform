@@ -50,5 +50,19 @@ export const mobileNumber: InputData = {
     type: 'number'
 }
 
-export const qualification:string[]=['10th','12th','B.Tech','M.Tech','MCA','MBA','Phd']
+export const qualification:string[]=['10th','12th','B.Tech','M.Tech','MCA','MBA','Phd'];
+
+export const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+export type Errors = {
+    firstName: string;
+    lastName: string;
+    mobileNumber: string;
+    state: string;
+    email: string;
+    qualification: string;
+    isTaluka:string;
+    captcha:string
+  };
+
 
